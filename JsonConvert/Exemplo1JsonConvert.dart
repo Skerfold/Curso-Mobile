@@ -11,7 +11,7 @@ void main() {
             "senha": 1234
                 }''';
 
-  Map<String,dynamic> usuario = json.decode(dbJson);
+  Map<String, dynamic> usuario = json.decode(dbJson);
 
   print(usuario["login"]); //joao_user
 
@@ -27,6 +27,3 @@ void main() {
 
   print(dbJson);
 }
-
-
-
