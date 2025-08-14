@@ -10,7 +10,7 @@ class ConfigPage extends StatefulWidget {
   final Function(bool, String) onSalvar;
 
   //construtor
-  ConfigPage({
+  const ConfigPage({super.key, 
     required this.temaEscuro,
     required this.nomeUsuario,
     required this.onSalvar,
