@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "891222092974",
+    "project_id": "fir-devsesi",
+    "storage_bucket": "fir-devsesi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891222092974:android:d97ff6c559665aa66cd13f",
+        "android_client_info": {
+          "package_name": "com.example.to_do_list_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeYsxJOY-A3rE79p9CPcOlodQ5OKw4vxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

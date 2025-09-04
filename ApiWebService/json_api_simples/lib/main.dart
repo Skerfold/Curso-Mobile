@@ -87,10 +87,11 @@ class _TarefasPageState extends State<TarefasPage>{
         headers: {"Content-Type":"application/json"},
         body: json.encode(tarefa)
       );
-      if (response.statusCode == 200)
+      if (response.statusCode == 200) {
         setState(() {
           _carregarTarefas();
         });
+      }
      
     } catch (e) {
       print("Erro ao atualizar Tarefa $e");

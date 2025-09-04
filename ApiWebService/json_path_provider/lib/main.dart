@@ -17,7 +17,7 @@ class ProdutoPage extends StatefulWidget {
   }
 }
 
-//classe que vai construir a tela para as mudanças
+//classe que vai construir a tela para as mudanças  
 class _ProdutoPageState extends State<ProdutoPage> {
   //atributos
   List<Map<String, dynamic>> produtos = [];
