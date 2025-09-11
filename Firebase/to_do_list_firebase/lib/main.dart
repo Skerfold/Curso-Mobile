@@ -12,5 +12,6 @@ void main() async{
   runApp(MaterialApp(
     title: "Lista de Tarefas",
     home: AutenticacaoView(), //direciona para tela de autenticação
+    debugShowCheckedModeBanner: false,
   ));
 }
