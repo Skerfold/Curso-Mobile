@@ -75,7 +75,7 @@ class _TelaCadastroState extends State<TelaCadastro> {
                 },
                 validator: (value) =>
                     value == null ? "Selecione um gênero" : null,
-                value: genero.isEmpty ? null : genero,
+                initialValue: genero.isEmpty ? null : genero,
               ),
               SizedBox(height: 10),
               _buildTextField(
