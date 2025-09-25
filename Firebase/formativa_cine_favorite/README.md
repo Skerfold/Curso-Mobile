@@ -37,7 +37,7 @@ Construir um aplicativo do 0 - O CineFavorite que permitirá criar uma conta e b
   - Atributos : id, título, PosterPatch, Nota
   - Métodos : adicionar, remover, listar, atualizarNota ( CRUD )
 
-```mermamid
+```mermaid
     classDiagram
         class User{
             +String uid
