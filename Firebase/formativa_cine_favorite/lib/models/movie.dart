@@ -1,38 +1,40 @@
-// Classe modelo de filmes
+//classe modelo de filmes
 
 class Movie {
-  // Atributos
-  final int id; // Id do filme no TMDB
-  final String title; // Titulo do filme
-  final String posterPath; // URL da imagem do poster
+  //atributos
+  final int id; //Id do filme no TMDB
+  final String title; //Titulo do Filme
+  final String posterPath; //URL da imagem do pôster
 
-  double rating; // Nota que o usuário dara ao filme ( 0 - 10 )
+  double rating; //nota que o usuário dará ao filme (de 0 a 5)
 
-  // Construtor
+  //construtor
   Movie({
     required this.id,
     required this.title,
     required this.posterPath,
-    this.rating = 0.0,
+    this.rating = 0.0 
   });
-  // Conversores - Converter de um OBJ para dados de FireStore
-  // toMap OBJ => JSON
-  Map<String, dynamic> toMap() {
+
+  //converter de um OBJ para modelo de dados para o FireStore
+  // toMap OBJ=> JSON
+  Map<String,dynamic> toMap(){
     return {
-      "id": id,
-      "title": title,
-      "posterPath": posterPath,
-      "rating": rating,
+      "id":id,
+      "title":title,
+      "posterPath":posterPath,
+      "rating":rating
     };
   }
 
-  // Criar um OBJ a partir dos dados da API TMDE
-  // fromMap Json => OBJ
-  factory Movie.fromMap(Map<String, dynamic> map) {
+  //Criar um Obj a partir dos dados do FireStore
+  //fabricar um OBJ a partir de um Json
+  factory Movie.fromMap(Map<String,dynamic> map){
     return Movie(
-      id: map["id"],
-      title: map["title"],
+      id: map["id"], 
+      title: map["title"], 
       posterPath: map["posterPath"],
+      rating: map["rating"] ?? 0.0
     );
   }
 }
